@@ -2,6 +2,7 @@ import { useState } from "react";
 import Expenses from "./components/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
+
 const DUMMY_EXPENSES = [
   {
     id: 'e1',
@@ -35,6 +36,7 @@ function App() {
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler}/>
+      
       <Expenses items={expenses}/>
     </div>
   );
